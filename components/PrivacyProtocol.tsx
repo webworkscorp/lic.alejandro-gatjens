@@ -1,0 +1,17 @@
+
+import React from 'react';
+
+const PrivacyProtocol: React.FC = () => {
+  return (
+    <section className="py-24 bg-transparent">
+      <div className="container mx-auto px-6 max-w-2xl text-center">
+        <p className="text-champagne text-[9px] uppercase tracking-[0.4em] font-bold mb-8">Sigilo Notarial</p>
+        <h2 className="text-white font-serif text-2xl italic leading-relaxed">
+          "Su información y trámites se manejan bajo el más estricto secreto profesional y ética legal."
+        </h2>
+      </div>
+    </section>
+  );
+};
+
+export default PrivacyProtocol;

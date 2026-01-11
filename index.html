@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bufete Lexpro | Abogado & Notario</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&family=Playfair+Display:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --obsidian: #020617;
+            --champagne: #C5A059;
+            --slate-gold: #334155;
+            --smoke: #94A3B8;
+        }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--obsidian);
+            color: #E2E8F0;
+            -webkit-font-smoothing: antialiased;
+        }
+        .serif { font-family: 'Playfair Display', serif; }
+        .legal-serif { font-family: 'Libre Baskerville', serif; }
+        .law-title { font-family: 'Cinzel', serif; letter-spacing: 0.02em; }
+        .text-champagne { color: var(--champagne); }
+        .border-champagne-dim { border-color: rgba(197, 160, 89, 0.2); }
+        
+        .letter-spacing-extreme { letter-spacing: 0.6em; }
+        
+        .reveal { animation: reveal 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards; opacity: 0; }
+        @keyframes reveal {
+            from { opacity: 0; transform: translateY(30px); filter: blur(10px); }
+            to { opacity: 1; transform: translateY(0); filter: blur(0); }
+        }
+
+        .dark-gradient {
+            background: linear-gradient(180deg, rgba(2, 6, 23, 0) 0%, rgba(2, 6, 23, 1) 100%);
+        }
+
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-track { background: var(--obsidian); }
+        ::-webkit-scrollbar-thumb { background: var(--champagne); border-radius: 10px; }
+        
+        ::selection {
+            background-color: var(--champagne);
+            color: white;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/"
+  }
+}
+</script>
+</head>
+<body class="overflow-x-hidden selection:bg-champagne selection:text-white">
+    <div id="root"></div>
+    <!-- Punto de entrada de la aplicación -->
+    <script type="module" src="./index.tsx"></script>
+</body>
+</html>
