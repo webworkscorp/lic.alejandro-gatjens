@@ -9,10 +9,12 @@ import Services from './components/Services.tsx';
 import ProfessionalDivider from './components/ProfessionalDivider.tsx';
 import Booking from './components/Booking.tsx';
 import Footer from './components/Footer.tsx';
+import PrivacyProtocol from './components/PrivacyProtocol.tsx';
+import FePublica from './components/FePublica.tsx';
 
 const App: React.FC = () => {
   return (
-    <div className="min-h-screen bg-[#020617]">
+    <div className="min-h-screen bg-[#050B18]">
       <Header />
       <main>
         <Hero />
@@ -22,13 +24,15 @@ const App: React.FC = () => {
         <ProfessionalDivider />
         
         <Services />
+        <FePublica />
         
         <Profile />
+        <PrivacyProtocol />
         
         <div 
           className="relative bg-fixed bg-center bg-cover"
           style={{ 
-            backgroundImage: "linear-gradient(rgba(2, 6, 23, 0.95), rgba(2, 6, 23, 0.95)), url('https://i.imgur.com/07kdqxi.jpeg')" 
+            backgroundImage: "linear-gradient(rgba(5, 11, 24, 0.95), rgba(5, 11, 24, 0.95)), url('https://i.imgur.com/07kdqxi.jpeg')" 
           }}
         >
           <Booking />

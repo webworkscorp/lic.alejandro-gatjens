@@ -1,78 +1,73 @@
 
 import React from 'react';
-import { Briefcase, Home, HardHat, LandPlot, ShieldCheck, MessageSquare, FileText, CheckCircle, Search, Lightbulb, PlayCircle, ClipboardCheck } from 'lucide-react';
+import { Briefcase, ShieldCheck, TrendingUp, Landmark, Search, ClipboardList, Target, BarChart3, Clock } from 'lucide-react';
 import { Service, ValuePillar, MethodologyStep } from './types.ts';
 
 export const VALUE_PILLARS: ValuePillar[] = [
   {
-    title: "Enfoque Práctico",
-    description: "Orientado a negocios, evitando tecnicismos innecesarios para agilizar la toma de decisiones.",
-    icon: <Briefcase className="w-5 h-5 text-champagne" strokeWidth={1.5} />
+    title: "30 Años de Trayectoria",
+    description: "Tres décadas de experiencia sólida garantizando la salud financiera de diversos negocios.",
+    icon: <Clock className="w-5 h-5 text-white" strokeWidth={1.5} />
   },
   {
-    title: "Claridad",
-    description: "Lenguaje claro y directo. Aquí no solo se revisan documentos, se construyen decisiones seguras.",
-    icon: <MessageSquare className="w-5 h-5 text-white" strokeWidth={1.5} />
+    title: "Del Caos al Control",
+    description: "Transformamos su estructura financiera en un sistema ordenado y funcional en 90 días.",
+    icon: <TrendingUp className="w-5 h-5 text-white" strokeWidth={1.5} />
   },
   {
-    title: "Acompañamiento Real",
-    description: "Soporte constante en decisiones importantes, más allá del simple trámite legal.",
-    icon: <ShieldCheck className="w-5 h-5 text-champagne" strokeWidth={1.5} />
+    title: "Tranquilidad Tributaria",
+    description: "Cumplimiento ante las autoridades para que usted se enfoque en el desarrollo de su actividad.",
+    icon: <ShieldCheck className="w-5 h-5 text-white" strokeWidth={1.5} />
   },
   {
-    title: "Visión Estratégica",
-    description: "Confidencialidad y criterio profesional para respaldar el crecimiento de su proyecto.",
-    icon: <Lightbulb className="w-5 h-5 text-white" strokeWidth={1.5} />
+    title: "Acceso a Crecimiento",
+    description: "Estados financieros diseñados para facilitar la obtención de créditos y patentes.",
+    icon: <Landmark className="w-5 h-5 text-white" strokeWidth={1.5} />
   }
 ];
 
 export const SERVICES: Service[] = [
   {
-    title: "Ventas y Negocios",
-    description: "Acompañamiento legal para operaciones comerciales, contratos y estructuración de acuerdos. Ideal para empresas que buscan crecer con bases sólidas.",
+    title: "Contabilidad Estratégica",
+    description: "Más que registros: análisis financiero para optimizar utilidades y flujo de caja mensualmente.",
+    icon: <BarChart3 className="w-6 h-6" />
+  },
+  {
+    title: "Transformación en 90 Días",
+    description: "Protocolo para negocios que buscan sanear cuentas y formalizar procesos administrativos.",
+    icon: <Target className="w-6 h-6" />
+  },
+  {
+    title: "Gestión de Patentes y Créditos",
+    description: "Trámites ágiles y estructuración de expedientes bancarios para financiamiento.",
     icon: <Briefcase className="w-6 h-6" />
   },
   {
-    title: "Bienes Raíces",
-    description: "Asesoría integral en compra-venta, estudios legales de propiedades y estructuración de proyectos inmobiliarios.",
-    icon: <Home className="w-6 h-6" />
-  },
-  {
-    title: "Asfalto e Infraestructura",
-    description: "Soporte legal especializado en contratos de obra, acuerdos comerciales y formalización de operaciones técnicas.",
-    icon: <HardHat className="w-6 h-6" />
-  },
-  {
-    title: "Proyecto Golden Estate",
-    description: "Liderazgo legal y estructural garantizando seguridad jurídica y orden contractual para inversionistas con visión a largo plazo.",
-    icon: <LandPlot className="w-6 h-6" />
+    title: "Asesoría Tributaria Preventiva",
+    description: "Protección legal-contable para evitar sanciones y optimizar la carga fiscal bajo la ley.",
+    icon: <ShieldCheck className="w-6 h-6" />
   }
 ];
 
 export const METHODOLOGY: MethodologyStep[] = [
   {
-    title: "Análisis Inicial",
-    description: "Estudio profundo del caso o proyecto para entender el contexto.",
-    icon: <Search className="w-5 h-5 text-champagne" strokeWidth={1.5} />
+    title: "S - Sistematización",
+    description: "Diagnóstico profundo y ordenamiento de la información histórica.",
+    icon: <Search className="w-5 h-5 text-white" strokeWidth={1.5} />
   },
   {
-    title: "Evaluación",
-    description: "Revisión legal y estratégica para identificar riesgos y oportunidades.",
-    icon: <ClipboardCheck className="w-5 h-5 text-white" strokeWidth={1.5} />
+    title: "A - Análisis Financiero",
+    description: "Evaluación de rentabilidad y detección de áreas de mejora en el capital.",
+    icon: <ClipboardList className="w-5 h-5 text-white" strokeWidth={1.5} />
   },
   {
-    title: "Propuesta",
-    description: "Definición clara de la ruta de acción a seguir.",
-    icon: <Lightbulb className="w-5 h-5 text-champagne" strokeWidth={1.5} />
+    title: "F - Formalización",
+    description: "Estandarización de procesos contables bajo la normativa vigente.",
+    icon: <ShieldCheck className="w-5 h-5 text-white" strokeWidth={1.5} />
   },
   {
-    title: "Ejecución",
-    description: "Implementación y acompañamiento directo en cada paso.",
-    icon: <PlayCircle className="w-5 h-5 text-white" strokeWidth={1.5} />
-  },
-  {
-    title: "Seguimiento",
-    description: "Respaldo continuo para garantizar orden y seguridad.",
-    icon: <CheckCircle className="w-5 h-5 text-champagne" strokeWidth={1.5} />
+    title: "E - Evolución",
+    description: "Seguimiento estratégico para el crecimiento sostenido de su negocio.",
+    icon: <TrendingUp className="w-5 h-5 text-white" strokeWidth={1.5} />
   }
 ];

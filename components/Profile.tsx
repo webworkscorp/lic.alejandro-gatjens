@@ -3,33 +3,37 @@ import React from 'react';
 
 const Profile: React.FC = () => {
   return (
-    <section className="py-32 bg-[#020617]">
+    <section className="py-32 bg-[#050B18]">
       <div className="container mx-auto px-6 lg:px-24">
         <div className="grid lg:grid-cols-2 gap-20 items-center">
-          <div className="relative">
-            <div className="aspect-[4/5] overflow-hidden shadow-2xl bg-black border border-white/5">
-              <img 
-                src="https://i.imgur.com/QXEOdz1.jpeg" 
-                alt="Lic. Alejandro Gatjens" 
-                className="w-full h-full object-cover block grayscale hover:grayscale-0 transition-all duration-700"
-              />
+          <div className="relative flex justify-center lg:justify-start">
+            {/* Contenedor con tamaño controlado y sin recortes forzados */}
+            <div className="max-w-[260px] w-full relative">
+              <div className="shadow-2xl border border-white/10 bg-black overflow-hidden">
+                <img 
+                  src="https://i.imgur.com/mNIAbHD.jpeg" 
+                  alt="Sosa & Asociados - Gestión" 
+                  className="w-full h-auto block grayscale-[10%] hover:grayscale-0 transition-all duration-1000"
+                />
+              </div>
+              {/* Detalle minimalista */}
+              <div className="absolute -bottom-3 -right-3 w-12 h-12 border-r border-b border-white/20 hidden md:block pointer-events-none"></div>
             </div>
-            <div className="absolute -bottom-6 -right-6 w-32 h-32 border-r border-b border-champagne/30 hidden md:block pointer-events-none"></div>
           </div>
           
           <div>
-            <p className="text-champagne text-[10px] uppercase tracking-[0.4em] mb-4">Sobre el Licenciado</p>
-            <h2 className="text-4xl serif text-white mb-8 font-bold">Alejandro Gatjens</h2>
-            <p className="text-smoke text-lg mb-6 leading-relaxed font-light">
-              El Lic. Alejandro Gatjens ofrece asesoría jurídica enfocada en la toma de decisiones estratégicas para empresarios, inversionistas y emprendedores. Su enfoque combina criterio legal, visión comercial y comprensión real del entorno de negocios en Costa Rica.
+            <p className="text-white/40 text-[10px] uppercase tracking-[0.4em] font-bold mb-4">Experiencia</p>
+            <h2 className="text-4xl serif text-white mb-8 font-bold leading-tight">Más de 30 años en el sector financiero</h2>
+            <p className="text-white/70 text-lg mb-6 leading-relaxed font-light">
+              Sosa & Asociados facilita la gestión de su negocio. Con más de tres décadas de trayectoria, aportamos el orden necesario para la toma de decisiones basadas en datos.
             </p>
-            <p className="text-smoke text-lg mb-10 leading-relaxed font-light">
-              Cada caso se atiende con claridad, confidencialidad y una estructura orientada a prevenir riesgos, optimizar procesos y respaldar el crecimiento de cada proyecto.
+            <p className="text-white/70 text-lg mb-10 leading-relaxed font-light">
+              Nos enfocamos en organizar estructuras tributarias y financieras, facilitando procesos de bancarización y cumplimiento ante las autoridades.
             </p>
             
-            <div className="p-6 border-l border-champagne/40 bg-white/5">
+            <div className="p-6 border-l border-white/20 bg-white/5">
               <p className="text-white serif italic text-lg">
-                "Aquí no solo se revisan documentos. Se construyen decisiones seguras."
+                "Usted gestiona su negocio, nosotros aseguramos que los números reflejen la realidad."
               </p>
             </div>
           </div>
